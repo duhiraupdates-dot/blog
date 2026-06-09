@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hira Beacon | Elite Literature Publishing & Library</title>
     <meta name="description" content="A premium, glowing orange themed literature publishing platform. Write, publish, and read short stories, poetry, and reflective essays.">
+    <meta name="theme-color" content="#ff6f00">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="logo.jpg">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="http://localhost:5173/assets/fonts/fonts.css">
 </head>
@@ -706,5 +709,16 @@
     </div>
 
     <script src="app.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js').then(registration => {
+            console.log('SW registered: ', registration);
+          }).catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+        });
+      }
+    </script>
 </body>
 </html>
