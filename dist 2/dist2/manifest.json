@@ -1,0 +1,17 @@
+{
+  "name": "Hira Beacon",
+  "short_name": "Hira Beacon",
+  "description": "A premium, glowing orange themed literature publishing platform. Write, publish, and read short stories, poetry, and reflective essays.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcfaf7",
+  "theme_color": "#ff6f00",
+  "icons": [
+    {
+      "src": "logo.jpg",
+      "sizes": "192x192 512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
